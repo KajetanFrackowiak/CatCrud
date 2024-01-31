@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="~{general.html :: head}"></head>
+<body>
+<nav th:replace="~{general.html :: navbar}"></nav>
+<div class="container-fluid container-main">
+    <h1>On this website you can update Cat</h1>
+    <form method="post"  th:action="@{/updateCat}" th:object="${cat}">
+        <input type="hidden" th:field="*{id}">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <label for="name"><b class="text-start">Name:</b></label>
+                    <input type="text" name="name" th:field="*{name}" id="name" required>
+                </div>
+                <div>
+                    <label for="age"><b>Age:</b></label>
+                    <input type="number" name="age" th:field="*{age}" id="age" required>
+                </div>
+                <div class="clearfix">
+                    <button type="reset" class="btn-cancel">Cancel</button>
+                    <button type="submit" id="sendAddCat" class="btn-update">Update</button>
+                </div>
+            </div>
+            <div class="col-8 text-center">
+                <table th:replace="~{general.html :: tableAllCat}"></table>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

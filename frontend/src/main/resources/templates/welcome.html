@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>WebController</title>
+</head>
+<body>
+<p>Cats:</p>
+<table border="1">
+    <thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    </thead>
+    <tbody>
+    <tr th:each="cat: ${cats}">
+        <td th:text="${cat.id}"></td>
+        <td th:text="${cat.name}"></td>
+        <td th:text="${cat.age}"></td>
+        <td>
+            <a th:href="@{'editCat/' +${cat.id}">Edit</a>
+            <a>Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

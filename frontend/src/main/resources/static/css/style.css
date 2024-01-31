@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+#nav-item-add, #nav-item-all {
+    font-size: 16px;
+    color: aliceblue;
+}
+
+#nav-item-main-all {
+    font-size: 10px;
+    color: aliceblue;
+}
+
+.container-main {
+    /*margin-top: 20px;*/
+
+}
+
+html body {
+    background-image: url("https://images.wallpaperscraft.com/image/single/cat_sleep_magazines_129465_3840x2160.jpg");
+    background-blend-mode: darken;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+
+.btn-cancel, .btn-update, .btn-submit {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn-submit:hover, .btn-update:hover, .btn-cancel:hover {
+    opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.btn-cancel {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.btn-update {
+    padding: 14px 20px;
+    background-color: goldenrod;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.btn-cancel, .btn-submit, .btn-update {
+    float: left;
+    width: 50%;
+}
+
+.table_transparent {
+    --bs-table-bg: transparent !important;
+}
+tr > .text-white{
+    font-size: 23px;
+}
+tr > th > .text-white{
+    font-size: 35px;
+}
+
+
